@@ -653,11 +653,20 @@ pre tt:after {
 }
 
 .map {
-  width: 50%;
-  fill:#c19037;
+  width: 60%;
+  fill:#d3b376;
   cursor: pointer;
 }
 
-.map .st0:hover {
-  fill: #9b6421;
+.map .st0 {
+  stroke: #252b2c;
+}
+
+.state:hover .state-image {
+  display: none;
+}
+
+.state:hover .st0 {
+  stroke: #fff;
+  stroke-width: 2px;
 }

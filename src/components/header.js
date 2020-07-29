@@ -26,9 +26,31 @@ const Header = ({ siteTitle, logo, cart, menu }) => (
           textDecoration: `none`,
         }}
       >
-        <Img style={{maxWidth: "100%"}} fluid={logo} />
+        <Img style={{ maxWidth: "100%" }} fluid={logo} />
       </Link>
-      <div style={{display: "flex", alignItems: "center", marginRight: "10rem"}}>
+      <div style={{ display: "flex", alignItems: "center", marginRight: "10rem" }}>
+        <Link
+          to="/club-chelero/"
+          className="pt-sans-bold"
+          style={{
+            color: `#263138`,
+            marginRight: `3em`,
+            textDecoration: `none`,
+          }}
+        >
+          Club Chelero
+        </Link>
+        <Link
+          to="/promociones/"
+          className="pt-sans-bold"
+          style={{
+            color: `#263138`,
+            marginRight: `3em`,
+            textDecoration: `none`,
+          }}
+        >
+          Promociones
+        </Link>
         <Link
           to="/"
           style={{
@@ -38,18 +60,7 @@ const Header = ({ siteTitle, logo, cart, menu }) => (
             marginRight: "50px",
           }}
         >
-          <Img style={{maxWidth: "100%"}} fluid={cart} />
-        </Link>
-      
-        <Link
-          to="/"
-          style={{
-            width: "50px",
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          <Img style={{maxWidth: "100%"}} fluid={menu} />
+          <Img style={{ maxWidth: "100%" }} fluid={cart} />
         </Link>
       </div>
     </div>
